@@ -2,6 +2,7 @@ django-cors-headers==3.0.1
 Django==2.2.1
 django-debug-toolbar==1.11
 django-filter==2.1.0
+django-money==0.15
 djangorestframework==3.9.4
 djangorestframework-simplejwt==4.3.0
 psycopg2==2.8.2
