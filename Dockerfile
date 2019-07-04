@@ -14,6 +14,8 @@ RUN apk update && \
         gcc=8.3.0-r0 \
         python3-dev=3.6.8-r2 \
         libressl-dev=2.7.5-r0 \
+        libxml2-dev=2.9.9-r1 \
+        libxslt-dev=1.1.33-r1 \
         musl-dev=1.1.20-r4 && \
     apk add --no-cache postgresql-dev=11.4-r0 && \
     pip install --no-cache-dir -r ${BASE_FOLDER}/requirements.txt && \
