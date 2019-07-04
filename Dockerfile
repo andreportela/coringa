@@ -15,7 +15,7 @@ RUN apk update && \
         python3-dev=3.6.8-r2 \
         libressl-dev=2.7.5-r0 \
         musl-dev=1.1.20-r4 && \
-    apk add --no-cache postgresql-dev=11.3-r0 && \
+    apk add --no-cache postgresql-dev=11.4-r0 && \
     pip install --no-cache-dir -r ${BASE_FOLDER}/requirements.txt && \
     apk del postgres-build-deps && \
     rm -rf /var/cache/apk/* && \
