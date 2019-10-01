@@ -26,5 +26,4 @@ RUN apt update && \
     chown django /etc/authbind/byport/80 && \
     chmod 775 /etc/authbind/byport/80
 
-USER django
 WORKDIR ${BASE_FOLDER}
