@@ -2,8 +2,8 @@ FROM python:3.7.4-slim-buster
 ENV BASE_FOLDER /app
 
 ENV DJANGO_PROJECT_NAME project
-ARG INSTALLATION_DEPENDENCY_LIBS="gcc=4:8.3.0-1 python3-dev=3.7.3-1 libssl-dev=1.1.1c-1 libcups2-dev=2.2.10-6 linux-libc-dev=4.19.37-5+deb10u2 libpq-dev=11.5-1+deb10u1"
-ARG RUNTIME_LIBS="authbind=2.1.2 libcups2=2.2.10-6 libxslt1.1=1.1.32-2 libxml2=2.9.4+dfsg1-7+b3 libpq5=11.5-1+deb10u1"
+ARG INSTALLATION_DEPENDENCY_LIBS="gcc=4:8.3.0-1 python3-dev=3.7.3-1 libssl-dev=1.1.1c-1 libcups2-dev=2.2.10-6+deb10u1 linux-libc-dev=4.19.67-2+deb10u1 libpq-dev=11.5-1+deb10u1"
+ARG RUNTIME_LIBS="authbind=2.1.2 libcups2=2.2.10-6+deb10u1 libxslt1.1=1.1.32-2.1~deb10u1 libxml2=2.9.4+dfsg1-7+b3 libpq5=11.5-1+deb10u1"
 
 RUN mkdir ${BASE_FOLDER}
 
@@ -24,7 +24,6 @@ RUN apt update && \
     chmod +x /postgres_ready.py && \
     touch /etc/authbind/byport/80 && \
     chown django /etc/authbind/byport/80 && \
-    chmod 500 /etc/authbind/byport/80
+    chmod 775 /etc/authbind/byport/80
 
-USER django
 WORKDIR ${BASE_FOLDER}
