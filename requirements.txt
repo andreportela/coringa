@@ -8,6 +8,7 @@ django-cors-headers==3.0.2
 django-debug-toolbar==1.11
 django-filter==2.1.0
 django-money==0.15
+django-hashid-field==2.1.6
 django-silk==3.0.2
 djangorestframework==3.9.4
 djangorestframework-simplejwt==4.3.0
