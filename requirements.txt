@@ -9,7 +9,7 @@ django-debug-toolbar==1.11
 django-filter==2.1.0
 django-money==0.15
 django-silk==3.0.2
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 djangorestframework-simplejwt==4.3.0
 gprof2dot==2017.9.19
 gunicorn==19.9.0
